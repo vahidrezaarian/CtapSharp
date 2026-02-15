@@ -10,7 +10,7 @@
     <Version>1.0.0</Version>
     <Authors>Vahidreza Arian</Authors>
     <Description>CTAP (Client to Authenticator Protocol) library for C# - supports USB/NFC FIDO security keys</Description>
-    <PackageTags>fido;ctap;webauthn;securitykey;passkey;passkey</PackageTags>
+    <PackageTags>fido;ctap;webauthn;securitykey;passkey;passkeys</PackageTags>
     <Title>CTAP Library for C#</Title>
     <PackageProjectUrl></PackageProjectUrl>
     <PackageIcon></PackageIcon>
