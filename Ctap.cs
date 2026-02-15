@@ -7,7 +7,7 @@ namespace CtapSharp
 {
     public static partial class Extensions
     {
-        public static CBORObject ToCbor(this byte[] data)
+        public static CBORObject ToCborObject(this byte[] data)
         {
             return CBORObject.DecodeFromBytes(data);
         }
@@ -64,7 +64,7 @@ namespace CtapSharp
 
         public byte[] GetPinToken(byte[] pinHashEnc, byte[] platformKeyAgreement, int pinProtocol)
         {
-            return GetPinToken(pinHashEnc, platformKeyAgreement.ToCbor(), pinProtocol);
+            return GetPinToken(pinHashEnc, platformKeyAgreement.ToCborObject(), pinProtocol);
         }
 
         public byte[] GetKeyAgreement()
@@ -109,7 +109,7 @@ namespace CtapSharp
 
         public byte[] GetAssertion(string rpid, byte[] clientDataHash, byte[] allowList = null, byte[] extensions = null, byte[] options = null, byte[] pinAuth = null, int pinProtocol = 1)
         {
-            return GetAssertion(rpid, clientDataHash, allowList?.ToCbor(), extensions?.ToCbor(), options?.ToCbor(), pinAuth, pinProtocol);
+            return GetAssertion(rpid, clientDataHash, allowList?.ToCborObject(), extensions?.ToCborObject(), options?.ToCborObject(), pinAuth, pinProtocol);
         }
 
         public byte[] GetAssertion(CBORObject request)
@@ -121,7 +121,7 @@ namespace CtapSharp
 
         public byte[] GetAssertion(byte[] request)
         {
-            return GetAssertion(request.ToCbor());
+            return GetAssertion(request.ToCborObject());
         }
 
         public byte[] GetNextAssertion()
@@ -162,7 +162,7 @@ namespace CtapSharp
 
         public byte[] MakeCredential(byte[] clientDataHash, byte[] rp, byte[] user, byte[] publickKeyCredParams, byte[] excludeList = null, byte[] extensions = null, byte[] options = null, byte[] pinAuth = null, int pinProtocol = 1)
         {
-            return MakeCredential(clientDataHash, rp.ToCbor(), user.ToCbor(), publickKeyCredParams.ToCbor(), excludeList?.ToCbor(), extensions?.ToCbor(), options?.ToCbor(), pinAuth, pinProtocol);
+            return MakeCredential(clientDataHash, rp.ToCborObject(), user.ToCborObject(), publickKeyCredParams.ToCborObject(), excludeList?.ToCborObject(), extensions?.ToCborObject(), options?.ToCborObject(), pinAuth, pinProtocol);
         }
 
         public byte[] MakeCredential(CBORObject request)
@@ -174,7 +174,7 @@ namespace CtapSharp
 
         public byte[] MakeCredential(byte[] request)
         {
-            return MakeCredential(request.ToCbor());
+            return MakeCredential(request.ToCborObject());
         }
 
         public byte[] Reset()

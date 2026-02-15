@@ -1,4 +1,3 @@
 <Solution>
-  <Project Path="../ConsoleApp1/ConsoleApp1.csproj" Id="aea45cd3-a47f-4b56-aed5-f40f5fd93154" />
   <Project Path="CtapSharp.csproj" Id="196ea2cc-2e2d-4173-bec9-e9cbbe0c43ee" />
 </Solution>
