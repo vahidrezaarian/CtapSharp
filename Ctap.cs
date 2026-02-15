@@ -4,12 +4,12 @@
 // This file is part of Ctap.Net and is licensed under the MIT license.
 // See LICENSE file in the project root for full license information.
 
-using Ctap.Net.Transports;
+using CtapDotNet.Transports;
 using PeterO.Cbor;
 using System;
 using System.Collections.Generic;
 
-namespace Ctap.Net
+namespace CtapDotNet
 {
     public static partial class Extensions
     {

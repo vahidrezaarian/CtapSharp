@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 
-namespace Ctap.Net.Transports.Nfc
+namespace CtapDotNet.Transports.Nfc
 {
     internal class CcidNfcSecurityKeyDevice : FidoSecurityKeyDevice
     {

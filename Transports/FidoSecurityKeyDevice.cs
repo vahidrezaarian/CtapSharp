@@ -4,13 +4,13 @@
 // This file is part of Ctap.Net and is licensed under the MIT license.
 // See LICENSE file in the project root for full license information.
 
-using Ctap.Net.Transports.Nfc;
-using Ctap.Net.Transports.Usb;
+using CtapDotNet.Transports.Nfc;
+using CtapDotNet.Transports.Usb;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace Ctap.Net.Transports
+namespace CtapDotNet.Transports
 {
     public enum Transports
     {

@@ -10,7 +10,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Ctap.Net
+namespace CtapDotNet
 {
     public enum CtapStatusCode
     {

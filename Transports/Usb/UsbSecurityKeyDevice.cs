@@ -9,7 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace Ctap.Net.Transports.Usb
+namespace CtapDotNet.Transports.Usb
 {
     internal class UsbSecurityKeyDevice: FidoSecurityKeyDevice
     {
